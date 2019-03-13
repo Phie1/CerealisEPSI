@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d58a58fa49e589e4583d5557b8e8e8dc
+guid: 3fdee848cc9498e4dad1d171cf9e2aea
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -58,7 +58,37 @@ ModelImporter:
     4300012: eye-right
     10800000: Lamp
     10800002: Lamp.001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corne
+    second: {fileID: 2100000, guid: 2a12f01c3b9846e448e84b699f732ec5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: corps
+    second: {fileID: 2100000, guid: 8b590b527862cf5408afb6385c166cef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye
+    second: {fileID: 2100000, guid: ad21c43b631adf043a3b79f63aa1ff3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: museau
+    second: {fileID: 2100000, guid: 8d7c2cc0daeae894eb53030c3a0f0d2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oreilles
+    second: {fileID: 2100000, guid: 57e118396ba8cfe48bc8a937108cb783, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ventre
+    second: {fileID: 2100000, guid: a55e4dca068379944870bfed14481b8c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

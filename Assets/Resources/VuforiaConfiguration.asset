@@ -8,19 +8,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: Af9yU8r/////AAABmQ/dWQZkp0b8ngxRCDzzZ6oU51p3RqGpHLAO+fM4oHT3yvoKOCl1qB9czUzBkwWJFi04EAFh3DQVlaLIQ22xLG2tYXxBd0Hvsm6kfxUjK3xWWylidO+bsqKJG6Ki89nxAQiAhEDfktV/xUwvCnb/64JqREByZZYd+N6ell0e1Gx74hNYUw2SRD4JmgGeDAw6RykAooWRFVBVotmNBzg/t1FPwTFETiltLXIfKFuqnGWVo3wzhDYbFg8yXNWs1qOcHMysQRU6FD7XpPTIW81/A9I4LdWMg/5IyCp9elaELBdhRMCaw5GBwXxVwo0xM+X9wW1ZS8hMPXl6bOKEMvVjqxi/Y1mexT4zJDc1c5MXFK1r
-    ufoLicenseKey: QWZkdlQzZi8vLy8vQUFBQUtQNDNIc3N6SlVrZ2hLWjJXdm9wRmgwVXRIaVAwSG1aSDVrWXo0UnJpdTA3ZFhXZ0Z2RHpUVEd5c3ZIckFSZzVwcllVVk0xRzdhNjVRbUIxaktLMEJldWliTU5EU3NUK3RlSkpjd05lNHFtaVQ5YTNkcG9rQmM3RUpBWlFWV3BPTTZ2YTk2cFYweHBYVThBcXFscGdoVEpkNFFodGR0K3d5cTBnTmUxN2tuRVZETktZZldtSWszVmNmT1pORzllSjlZZXFoTS91bjRDM3FManA1MmFDeWVsazBaQUxWZXlCOVRkZ2loYys1NXJIVmVBUWxRYWVyS2tjTVVQa2hmV3dxZnoxSkdKRjV6TXNJNFZHSExlak1JYUEzMXgyWUlkNmNrQVBvVXJBOHVXSHdWUTd5Vmd0ZzFDL0lDcVVGSit3LzlIZFNyQzNCT0pkbTFMZTBqZVVGU1dmeVF5bENLcm1KZThPdDU2S283ak8=
+    ufoLicenseKey: QVZ3ZFVKNy8vLy8vQUFBQUtMNHZUZlQzM2tOd25wMkFsQ2RzOFAyQzdnTzhBWkhCUDcyYm83TEl2OHVVUm1BN2lOOCtlV0tmZElVWjBuVVNza3ExV0dMNHpVYzFDWGU4azhNVkEva0RhTlA0V0VSNEg1U2VXL3A4QW5EOWI2MEFBRUs1L1VManRhMy8waksxY0lLVm5nSFpvWVI2VjNvRlQyVlR2aUZpNXh4WHN3ZzU4MDExVEt2bVJGVnQ1bXZJUTZMTzRpbFoxV2ZWZVFqN015ZEozRHp4KzVhYjVYeWdaczk2OXVmNnhOZzNxL3phRXJrMlRVV2xXOUZtY1BSd1RqbTAzSDJIekpDOE5Ed0NUUlpWNlJ3SitTeXYzY0s4bmxHTnpKVlp3UHRrNEdKRS9mRjBESEV2VEZGR2ptNkQxNjk4alV6dmVzUkxuZnBYVER6T3pqY0RTbTlIendmOEdKS2VvQW9uVS9CVjQ5RklDWTNnc2hKNFNGajE=
     delayedInitialization: 0
-    cameraDeviceModeSetting: -1
+    cameraDeviceModeSetting: -2
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
-    useDelayedLoadingObjectTargets: 0
+    useDelayedLoadingObjectTargets: 1
     cameraDirection: 0
-    mirrorVideoBackground: 0
+    mirrorVideoBackground: 2
     version: 8.0.10
     eulaAcceptedVersions: '{"Values":["7.5","8.0"]}'
   digitalEyewear:
@@ -29,8 +29,8 @@ MonoBehaviour:
     eyewearType: 0
     stereoFramework: 0
     seeThroughConfiguration: 0
-    viewerName: 
-    viewerManufacturer: 
+    viewerName: Generic Cardboard
+    viewerManufacturer: Vuforia
     useCustomViewer: 0
     customViewer:
       Version: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
     numDivisions: 2
     videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
       type: 3}
-    matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
+    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
@@ -64,6 +64,6 @@ MonoBehaviour:
     autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: 
-    flipHorizontally: 0
+    flipHorizontally: 1
     turnOffWebCam: 0
     renderTextureLayer: 30
