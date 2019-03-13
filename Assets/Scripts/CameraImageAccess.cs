@@ -36,6 +36,7 @@ public class CameraImageAccess : MonoBehaviour
     private bool mFormatRegistered = false;
 
     bool needFocus;
+    bool fixedColor = false;
 
     #endregion // PRIVATE_MEMBERS
 
@@ -104,6 +105,10 @@ public class CameraImageAccess : MonoBehaviour
         needFocus = true;
     }
 
+    public void SetColor()
+    {
+        fixedColor = !fixedColor;
+    }
 
 
     void OnVuforiaStarted()
@@ -243,17 +248,19 @@ public class CameraImageAccess : MonoBehaviour
                     img = ventre.GetComponentsInChildren<UnityEngine.UI.Image>()[0];
                     img.color = ventrePixelColor;
 
-                    for(int i=0; i< Model3Drenderer.materials.Length; i++)
+                    if (!fixedColor)
                     {
-                        //renderer.materials[i].shader = Shader.Find("_Color");
-                        if (Model3Drenderer.materials[i].name == "corps (Instance)")
-                            Model3Drenderer.materials[i].color = peauPixelColor;
-                        if (Model3Drenderer.materials[i].name == "museau (Instance)")
-                            Model3Drenderer.materials[i].color = museauPixelColor;
-                        if (Model3Drenderer.materials[i].name == "ventre")
-                            Model3Drenderer.materials[i].color = ventrePixelColor;
-                    }              
-
+                        for (int i = 0; i < Model3Drenderer.materials.Length; i++)
+                        {
+                            //renderer.materials[i].shader = Shader.Find("_Color");
+                            if (Model3Drenderer.materials[i].name == "corps (Instance)")
+                                Model3Drenderer.materials[i].color = peauPixelColor;
+                            if (Model3Drenderer.materials[i].name == "museau (Instance)")
+                                Model3Drenderer.materials[i].color = museauPixelColor;
+                            if (Model3Drenderer.materials[i].name == "ventre")
+                                Model3Drenderer.materials[i].color = ventrePixelColor;
+                        }
+                    }
 
                     //if (camTexture == null)
                     //    camTexture = new Texture2D(image.Width, image.Height);
