@@ -28,8 +28,8 @@ public class ShareScreenshot : MonoBehaviour
     {
 
         screenshotName = "cerealis.png";
-        shareSubject = "Voici mon coloriage en réalité augmentée !";
-        shareMessage = "Si tu veux faire pareil, télécharge l'application Céréalis !";
+        shareSubject = "#cerealis #coloring #AR";
+        shareMessage = "#cerealis #coloring #AR";
 
         ShareMyScreenshot();
     }
