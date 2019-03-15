@@ -58,7 +58,7 @@ public class ShareScreenshot : MonoBehaviour
         isProcessing = true;
         // wait for graphics to render
         yield return new WaitForEndOfFrame();
-
+        
         string screenShotPath = Application.persistentDataPath + "/" + screenshotName;
         ScreenCapture.CaptureScreenshot(screenshotName, 1);
         yield return new WaitForSeconds(0.5f);
